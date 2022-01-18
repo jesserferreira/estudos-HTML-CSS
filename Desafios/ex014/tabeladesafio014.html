@@ -8,33 +8,27 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
-
         table {
             border-collapse: collapse;
             width: 600px;
             height: 200px;
             text-align: center;
         }
-
         td, th {
             border: 1px solid black;
             padding: 8px;
         }
-
         thead, .media, .mfinal {
             background-color: rgb(117, 117, 117);
             font-size: 1.2em;
             color: white;
         }
-
         .media {
             text-align: left;
         }
-
         .disc { 
             text-align: left;
         }
-
     </style>
 </head>
 <body>
@@ -42,10 +36,10 @@
     <table>
         <thead>
             <tr>
-                    <th rowspan="2" scope="row">Área</th>
-                    <th rowspan="2" scope="rowgroup">Disciplinas</th>
+                    <th rowspan="2" scope="col">Área</th>
+                    <th rowspan="2" scope="col">Disciplinas</th>
                     <th colspan="2" scope="colgroup">Notas</th>
-                    <th rowspan="2" scope="row">Média</th>
+                    <th rowspan="2" scope="col">Média</th>
             </tr>
             <tr>
                 <th scope="col">Nota 1</th>
@@ -79,7 +73,7 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th colspan="4" scope="colgroup" class="media">Média de Exatas</th>
+                <th colspan="4" scope="row" class="media">Média de Exatas</th>
                 <td class="mfinal">0.0</td>
             </tr>
             <tr>
@@ -96,7 +90,7 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th colspan="4" scope="colgroup" class="media">Média de Humanas</th>
+                <th colspan="4" scope="rowgroup" class="media">Média de Humanas</th>
                 <td class="mfinal">0.0</td>
             </tr>
         </tbody>
