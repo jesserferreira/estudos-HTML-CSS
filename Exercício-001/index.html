@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Leonardo da Vinci</title>
+</head>
+<body>
+    <header>
+        <p>Leonardo da Vinci</p>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1><strong>Leonardo da Vinci</strong> Portfolio oficial</h1>
+
+        <section class="first">
+            <img class="leonardo" src="image/leonardodavinci-med.png" alt="Imagem de Leonardo Da Vinci">
+
+            <div class="resume">
+                <h2>Quem sou</h2>
+                <p>Sou Leonardo di Ser Piero da Vinci, nasci em 15 de abril de 1452, fui um polímata nascido na atual Itália, fui um dos personagens mais importantes do Alto Renascimento.</p>
+
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>Cientista</li>
+                    <li>Matemático</li>
+                    <li>Engenheiro</li>
+                    <li>Inventor</li>
+                    <li>Anatomista</li>
+                    <li>Pintor</li>
+                    <li>Escultor</li>
+                    <li>Arquiteto</li>
+                    <li>Botânico</li>
+                    <li>Poeta</li>
+                    <li>Músico</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="history">
+        <h3><strong>Sobre</strong> Um pouco da minha história</h3>
+        <p>Sou filho ilegítimo de um notário, Piero da Vinci, e de uma camponesa, Caterina. Nasci em Vinci, na região da Florença, fui educado no ateliê do renomado pintor florentino, Verrocchio. Passei a maior parte do início da vida profissional a serviço de Ludovico Sforza, em Milão. Também trabalhei em Veneza, Roma e Bolonha, e passei meus últimos dias na França, numa casa que me foi presenteada pelo rei Francisco I.</p>
+        <p>Sou conhecido até hoje, principalmente, como pintor. A Mona Lisa e A Última Ceia são as minhas pinturas mais famosas, também são as mais reproduzidas e mais parodiadas de todos os tempos, e a fama se compara à Criação de Adão, de Michelangelo.</p>
+        </section>
+
+        <h3><strong>Portfolio</strong> Algumas coisas que eu fiz</h3>
+
+        <section>
+            <ul class="portfolio">
+                <li class="invention">
+                    <img src="image/rolamento.jpg" alt="Imagem de rolamento">
+
+                    <h3><strong>Rolamento</strong></h3>
+                    <p>Apesar da existência de rolamntos ser datada de período anterior ao nascimento de Cristo, Leonardo da Vinci aprimorou o dispositivo para diminuir a fricção entre as esferas. Hoje os rolamentos são encontrados em praticamente tudo.</p>
+                </li>
+
+                <li class="invention">
+                    <img src="image/escafandro.jpg" alt="Imagem de escafandro">
+
+                    <h3><strong>Escafandro</strong></h3>
+                    <p>O equipamento de mergulho, o objetivo era possibilitar o ataque de embarcações por baixo. O traje foi imaginado em couro, com visor de vidro e canal respirador (snorkel) feito em cana.</p>
+                </li>
+
+                <li class="invention">
+                    <img src="image/ornitóptero.jpg" alt="Imagem de ornitóptero">
+                    
+                    <h3><strong>Ornitóptero</strong></h3>
+                    <p>É um equipamento de voo que obtém a sistentação e a propulsão a partir do movimento alternativo das asas, como ocorre com algumas aves e/ou insetos.</p>
+                </li>
+
+                <li class="invention">
+                    <img src="image/helicoptero.jpg" alt="Imagem de helicóptero">
+
+                    <h3><strong>Helicóptero</strong></h3>
+                    <p>Também conhecido como "parafuso voador", este helicóptero de Da Vinci é considerado uma de suas invenções mais estranhas e, de acordo com os cientistas, de pouca utilidade.</p>
+                </li>
+            </ul>
+        </section>
+
+        <form method="post" id="contato" action="form.php" autocomplete="on">
+
+            <legend><strong>Contato</strong> Fale com o Leo</legend>
+
+                <labl for="cNome"><input type="text" name="tNome" id="cNome" size="50" minlength="5" maxlength="80" placeholder="Nome" autocomplete="name"></labl>
+
+                <label for="cEmail"><input type="email" name="tEmail" id="cEmail" size="50" maxlength="80" placeholder="Email" required autocomplete="email"></label>
+
+                <label for="cPhone"><input type="tel" name="tPhone" id="cPhone" size="50" minlength="11" maxlength="11" placeholder="Telefone" required autocomplete="tel"></label>
+
+                <label for="cAssunto"><input type="text" name="tAssunto" id="cAssunto" size="50" minlength="5" maxlength="80" placeholder="Assunto" required></label>
+
+                <label for="cMsg"><textarea name="tMsg" id="cMsg" cols="50" rows="8" minlength="12" placeholder="Mensagem"></textarea></label>
+
+            <input type="submit" value="Enviar mensagem!" class="btn-sub">
+        </form>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; Leo 2018</p>
+    </footer>
+</body>
+</html>
